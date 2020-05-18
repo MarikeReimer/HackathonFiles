@@ -1,0 +1,27 @@
+groups:
+- neurodata_type_def: BlenderPlaneSegmentation
+  neurodata_type_inc: PlaneSegmentation
+  doc: A plane to store data from blender
+  groups:
+  - neurodata_type_def: BlenderSurface
+    neurodata_type_inc: NWBDataInterface
+    doc: mesh body from Blender
+    datasets:
+    - name: faces
+      dtype: uint
+      dims:
+      - face_number
+      - vertex_index
+      shape:
+      - null
+      - 3
+      doc: faces for surface, indexes vertices
+    - name: vertices
+      dtype: float
+      dims:
+      - vertex_number
+      - xyz
+      shape:
+      - null
+      - 3
+      doc: vertices for surface, points in 3D space

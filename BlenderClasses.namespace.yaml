@@ -1,0 +1,7 @@
+namespaces:
+- doc: Extension for use in my Lab
+  name: TanLab
+  schema:
+  - namespace: core
+  - source: BlenderClasses.extensions.yaml
+  version: 0.1.0
